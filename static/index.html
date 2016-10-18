@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="RepoGithubList">
+    <head>
+        <title>Searching Github Repositories</title>
+        <link rel="stylesheet" type="text/css" href="/bower_components/angular-material/angular-material.min.css" /> 
+
+        <script src="/bower_components/angular/angular.min.js"></script>
+        <script src="/bower_components/angular-animate/angular-animate.min.js"></script>
+        <script src="/bower_components/angular-aria/angular-aria.min.js"></script>
+        <script src="/bower_components/angular-messages/angular-messages.min.js"></script>
+        <script src="/bower_components/angular-material/angular-material.min.js"></script>
+        <script src="/js/directives/repositoriesList.js"></script>
+        <script src="/js/app.js"></script>
+        <script src="/js/services/repositories.js"></script>
+        
+    </head>
+    <body  ng-controller="AppController">
+        <header>
+            <h1>Your tool to list user repositories </h1>    
+        </header>
+        
+        
+		<div>
+			<form ng-submit="submit()" >
+              <md-input-container  class="md-block">
+                <input ng-model="inputUser" placeholder="Enter user's name and hit enter">
+              </md-input-container>
+              <!--<md-button class="md-raised" ng-click="submit()">Button</md-button>-->
+
+            </form>
+            <section class="repositories" >
+                <repositories-list repositories='repositories'> </repositories-list>
+            </section>
+            <div class="message">
+                {{messageFeedback}}
+            </div>
+		</div>
+ 
+    </body>
+</html>
+
+

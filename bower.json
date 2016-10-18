@@ -1,0 +1,22 @@
+{
+  "name": "goeuro",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Ekaitz <ekaitz@creative-tweed.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-mocks": "~1.5.8",
+    "angular-material": "~1.1.1"
+  }
+}

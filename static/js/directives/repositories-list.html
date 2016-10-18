@@ -1,0 +1,7 @@
+<div class="grid">
+	<div class="grid-item" ng-repeat="repository in repositories | orderBy: order">
+		{{repository.name}}
+		<a href="{{repository.html_url}}" target="_blank">{{repository.html_url}}</a>
+	</div>
+</div>
+
